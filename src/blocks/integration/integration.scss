@@ -1,0 +1,81 @@
+.integration__title {
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  padding: 36px 47px 40px 47px;
+}
+
+.integration__list {
+  @include list-reset;
+  background-image: url("../../img/integration-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.integration__content {
+  font-size: 16px;
+  line-height: 131.02%;
+  padding: 0 21px;
+  margin-bottom: 23px;
+}
+
+.integration__text {
+  font-size: 12px;
+  line-height: 141.02%;
+  padding: 0 22px;
+  margin-bottom: 15px;
+}
+
+.integration__sublist {
+  @include list-reset;
+  display: grid;
+  grid-template-columns: repeat(3, 93px);
+  padding: 0 21px;
+  margin-bottom: 37px;
+}
+
+.integration__subitem {
+  position: relative;
+  height: 93px;
+  padding: 10px;
+  border: 1px solid #e6e6e6;
+}
+
+.integration__img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.integration__image {
+  position: relative;
+}
+
+.integration__pay {
+  position: relative;
+}
+
+@media (min-width: 768px) {
+
+  .integration__iphone,
+  .integration__image,
+  .integration__delivery {
+    width: 768px;
+  }
+
+  .integration__content {
+    font-size: 21px;
+    text-align: center;
+  }
+
+  .integration__text {
+    font-size: 14px;
+    text-align: center;
+    padding: 0 100px;
+  }
+
+  .integration__sublist {
+    padding: 0 245px;
+  }
+}

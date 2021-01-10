@@ -15,7 +15,10 @@
   <header class="header">
     <div class="header__wrapper">
       <a class="header__logo logo" href="index.html">
-        <img src="../img/logo-alion.png" alt="Logo Alion">
+        <picture>
+          <source type="image/webp" srcset="../img/icons/svg/icon-logo-alion-tablet.svg">
+          <img src="../img/icons/svg/icon-logo-alion.svg" alt="Logo Alion">
+        </picture>
       </a>
       <button class="header__toggle burger">
         <span class="burger__inner"><span class="visually-hidden">Открыть меню</span></span>
@@ -30,16 +33,476 @@
               <li class="header__nav-item"><a class="header__nav-link" href="#">Retour d'information</a></li>
             </ul>
           </nav>
-          <a class="header__button button">obtenir un devis</a>
+          <a class="header__button button button--border">obtenir un devis</a>
         </div>
       </div>
     </div>
   </header>
-
-
-
-
-
-
-
+  <main class="main">
+    <section class="promo">
+      <h1 class="visually-hidden">Accélérez la numérisation</h1>
+      <div class="promo__wrapper">
+        <div class="promo__slider">
+          <ul class="promo__list">
+            <li class="promo__item">
+              <picture>
+                <source type="image/webp" srcset="../">
+                <img class="promo__img" src="../img/promo1.jpg" alt="promo woman">
+              </picture>
+            </li>
+            <!-- <li class="promo__item">
+              <picture>
+                <source type="image/webp" srcset="../">
+                <img class="promo__img" src="../img/promo2.jpg" alt="promo woman">
+              </picture>
+            </li>
+            <li class="promo__item">
+              <picture>
+                <source type="image/webp" srcset="../">
+                <img class="promo__img" src="../img/promo3.jpg" alt="promo woman">
+              </picture>
+            </li>
+            <li class="promo__item">
+              <picture>
+                <source type="image/webp" srcset="../">
+                <img class="promo__img" src="../img/promo4.jpg" alt="promo woman">
+              </picture>
+            </li>
+            <li class="promo__item">
+              <picture>
+                <source type="image/webp" srcset="../">
+                <img class="promo__img" src="../img/promo5.jpg" alt="promo woman">
+              </picture>
+            </li>
+            <li class="promo__item">
+              <picture>
+                <source type="image/webp" srcset="../">
+                <img class="promo__img" src="../img/promo6.jpg" alt="promo woman">
+              </picture>
+            </li> -->
+          </ul>
+          <div class="promo__switch-pagination">
+            <ul class="promo__switch-list">
+              <li class="promo__switch-prev">
+                <svg>
+                  <use xlink:href="img/sprites/sprite.svg#icon-arrow-left"></use>
+                </svg>
+              </li>
+              <li><a class="promo__pagination-number" href="#">01</a></li>
+              <li><a class="promo__pagination-number" href="#">02</a></li>
+              <li><a class="promo__pagination-number" href="#">03</a></li>
+              <li><a class="promo__pagination-number" href="#">04</a></li>
+              <li class="promo__switch-next">
+                <svg>
+                  <use xlink:href="img/sprites/sprite.svg#icon-arrow-right"></use>
+                </svg>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="promo__content">
+        <p class="promo__text">Passez à l’action !</p>
+        <p class="promo__title">Accélérez la numérisation</p>
+        <p class="promo__paragraph">de votre entreprise</p>
+        <div class="promo__block">
+          <a class="promo__button button">
+            <span class="button__promo">
+              <svg>
+                <use xlink:href="img/sprites/sprite.svg#icon-button"></use>
+              </svg>
+            </span>
+            <span>obtenir un devis</span>
+          </a>
+          <p class="promo__legend">Et bénéficiez des aides et subventions de l’État</p>
+        </div>
+      </div>
+      <ul class="promo__supports">
+        <li class="promo__support support">
+          <div class="support__line"></div>
+          <div class="support__content">
+            <div class="support__logo">
+              <picture>
+                <source type="image/webp" srcset="">
+                <source media="(min-width: 768px)" srcset="../img/logo1-desktop.png">
+                <img class="support__logo-region" src="../img/logo1.png" alt="logo region">
+              </picture>
+            </div>
+            <p class="support__text">Avec le soutien du gouvernement francais</p>
+          </div>
+        </li>
+        <li class="promo__support support">
+          <div class="support__line"></div>
+          <div class="support__content">
+            <div class="support__logo">
+              <picture>
+                <source type="image/webp" srcset="">
+                <source media="(min-width: 768px)" srcset="../img/logo2-desktop.png">
+                <img class="support__logo-alion" src="../img/logo2.png" alt="logo alion">
+              </picture>
+            </div>
+            <p class="support__text">Nous nous engageon de vous fournir des solutions de numérisation de votre
+              entreprise à des tarifs préférenciels</p>
+          </div>
+        </li>
+    </section>
+    <section class="solutions">
+      <h2 class="solutions__title">Nos solutions</h1>
+        <p class="solutions__develop">Le développement de proget web :</p>
+        <div class="solutions__wrapper"></div>
+        <ul class="link__list">
+          <li class="link__items"><a class="link__item" href="#">Page d’accueille</a></li>
+          <li class="link__items"><a class="link__item" href="#">Site Web multi-pages</a></li>
+          <li class="link__items"><a class="link__item" href="#">Boutique en ligne</a></li>
+        </ul>
+        <div class="solutions__image">
+          <picture>
+            <source type="image/webp" srcset="">
+            <img class="solutions__laptop" src="../img/laptop-mobile.png" alt="laptop">
+          </picture>
+          <div class="solutions__page">
+            <h2 class="solutions__head">Page d’accueille</h2>
+            <p class="solutions__legend">*Temps de développement de 7 à 21 jours</p>
+            <p class="solutions__text">Vous dirigez une petite entreprise et souhaitez atteindre de nouveaux canaux pour
+              attirer les visiteurs - avoir un site Web d'une page peut être une excellente solution.</p>
+            <p class="solutions__text">Dans cette période sanitaire difficile, nous avons développé une version standard
+              du développement des pages d’accueille afin de réduire le coût final du projet.</p>
+            <p class="solutions__target">Cette solution vous convient si votre objectif est</p>
+            <ul class="solutions__list">
+              <li class="solutions__item">Fourniture de services (par exemple, services de beauté, réparations mineures,
+                etc.)</li>
+              <li class="solutions__item">Vente d’un article spécifique;</li>
+              <li class="solutions__item">Attiraction des étudiants (par ex. сours de langue, tutorat);</li>
+              <li class="solutions__item">Création d'une vue générale de votre entreprise;</li>
+              <li class="solutions__item">Refonte du site existant, augmentation des ventes;</li>
+              <li class="solutions__item">Autre.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="solutions__block">
+          <h2 class="solutions__name">La procédure de création d'un site Web</h2>
+          <ul class="solutions__advantages">
+            <li class="solutions__advantage">
+              <div class="solutions__number">
+                <span class="target__number">01</span>
+                <span class="target__name">Formulation des objectifs</span>
+              </div>
+              <p class="target__text">En s'appuyant sur l'analyse des concurrents et vos objectifs</p>
+            </li>
+            <li class="solutions__advantage">
+              <div class="solutions__number">
+                <span class="target__number">02</span>
+                <span class="target__name">Développement du prototype et du design</span>
+              </div>
+              <p class="target__text">Conformément à vos attentes et au fonctionnement du future site</p>
+            </li>
+            <li class="solutions__advantage">
+              <div class="solutions__number">
+                <span class="target__number">03</span>
+                <span class="target__name">Codage d’une site Web</span>
+              </div>
+              <p class="target__text">Nous passons au codage du designe déterminé</p>
+            </li>
+            <li class="solutions__advantage">
+              <div class="solutions__number">
+                <span class="target__number">04</span>
+                <span class="target__name">Test de qualité</span>
+              </div>
+              <p class="target__text">Nous faisons des tests de la performance et de la fonctionnalité
+              </p>
+            </li>
+            <li class="solutions__advantage">
+              <div class="solutions__number">
+                <span class="target__number">04</span>
+                <span class="target__name">Livraison du projet</span>
+              </div>
+              <p class="target__text">Après les tests, vous obtenez le site finit
+              </p>
+            </li>
+        </div>
+        </div>
+    </section>
+    <section class="tarifs">
+      <h2 class="tarifs__title">Les tarifs</h2>
+      <ul class="tarifs__list">
+        <li class="tarifs__item">
+          <p class="tarifs__name">avant du confinement</p>
+          <p class="tarifs__price">3000 € HT</p>
+          <p class="tarifs__standart">La prix standatd de cet offre</p>
+          <div class="tarifs__wrapper">
+            <a class="tarifs__button button" href="#">Obtenir un devis</a>
+          </div>
+        </li>
+        <li class="tarifs__item">
+          <p class="tarifs__name">pour périod du confinement</p>
+          <p class="tarifs__price">1500 € HT</p>
+          <p class="tarifs__standart">La prix standatd de cet offre</p>
+          <div class="tarifs__wrapper">
+            <a class="tarifs__button button" href="#">Obtenir un devis</a>
+          </div>
+        </li>
+        <li class="tarifs__item tarifs__item--last">
+          <p class="tarifs__name">pour périod du confinement</p>
+          <p class="tarifs__price">0 € HT</p>
+          <p class="tarifs__standart">La prix standatd de cet offre</p>
+          <div class="tarifs__wrapper">
+            <a class="tarifs__button tarifs__button--last button" href="#">Obtenir un devis</a>
+          </div>
+          <div class="tarifs__block">
+            <p class="tarifs__help">Reinségnez-vous sur l’aide du région</p>
+            <p class="tarifs__more">Savoir plus</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section class="integration">
+      <div class="integration__wrapper">
+        <h2 class="integration__title">Intégrations possibles</h2>
+        <ul class="integration__list">
+          <div class="integration__box">
+            <li class="integration__item">
+              <picture>
+                <source media="(min-width: 768px)" srcset="../img/iphone-desktop.png">
+                <source type="image/webp" srcset="">
+                <img class="integration__iphone" src="../img/iphone-mobile.png" alt="iphone">
+              </picture>
+            <li class="integration__content">1. Restez en contact avec vos clients grâce aux chats en ligne</li>
+            <ul class="integration__sublist">
+              <li class="integration__subitem">
+                <picture>
+                  <source type="image/webp" srcset="">
+                  <img class="integration__img" src="../img/chatra.png" alt="charta">
+                </picture>
+              </li>
+              <li class="integration__subitem">
+                <picture>
+                  <source type="image/webp" srcset="">
+                  <img class="integration__img" src="../img/crisp.jpg" alt="crips">
+                </picture>
+              </li>
+              <li class="integration__subitem">
+                <picture>
+                  <source type="image/webp" srcset="">
+                  <img class="integration__img" src="../img/jivo.png" alt="jivo">
+                </picture>
+              </li>
+              <li class="integration__subitem">
+                <picture>
+                  <source type="image/webp" srcset="">
+                  <img class="integration__img" src="../img/olark.png" alt="olark">
+                </picture>
+              </li>
+              <li class="integration__subitem">
+                <picture>
+                  <source type="image/webp" srcset="">
+                  <img class="integration__img" src="../img/zendesk.png" alt="zendesk">
+                </picture>
+              </li>
+              <li class="integration__subitem">
+                <picture>
+                  <source type="image/webp" srcset="">
+                  <img class="integration__img" src="../img/livechat.png" alt="livechat">
+                </picture>
+              </li>
+            </ul>
+          </div>
+          </li>
+          <div class="integration__box">
+            <li class="integration__item">
+              <div class="integration__pay">
+                <div class="circle">
+                  <div class="circle__small"></div>
+                  <div class="circle__mid"></div>
+                  <div class="circle__big"></div>
+                </div>
+                <picture>
+                  <source media="(min-width: 768px)" srcset="../img/woman-with-phone-desktop.jpg">
+                  <source type="image/webp" srcset="">
+                  <img class="integration__image" src="../img/woman-with-phone.jpg" alt="woman with phone">
+                </picture>
+            <li class="integration__content">2. Proposez un paiement en ligne</li>
+            <p class="integration__text">Nos banques partenaires ont mobilisé des équipes pour intégrer les systèmes de
+              paiement dans les sites que nous réalisons pour votre entreprise</p>
+            </li>
+          </div>
+          <div class="integration__box">
+            <li class="integration__item">
+              <picture>
+                <source media="(min-width: 768px)" srcset="../img/man-delivery-desktop.jpg">
+                <source type="image/webp" srcset="">
+                <img class="integration__delivery" src="../img/man-delivery.jpg" alt="delivery">
+              </picture>
+            <li class="integration__content">3. Intégrez un service de livraison </li>
+            <p class="integration__text">Votre entreprise se concentre-t-elle sur la livraison des produits ? Nous avons
+              les
+              solution d'intégration issuent de nos partenaires !</p>
+            <ul class="integration__sublist">
+              <li class="integration__subitem">
+                <picture>
+                  <source type="image/webp" srcset="">
+                  <img class="integration__img" src="../img/chronofresh.png" alt="chronofresh">
+                </picture>
+              </li>
+              <li class="integration__subitem">
+                <picture>
+                  <source type="image/webp" srcset="">
+                  <img class="integration__img" src="../img/chronopost.png" alt="chronopost">
+                </picture>
+              </li>
+              <li class="integration__subitem">
+                <picture>
+                  <source type="image/webp" srcset="">
+                  <img class="integration__img" src="../img/collissimo.png" alt="collissimo">
+                </picture>
+              </li>
+              <li class="integration__subitem">
+                <picture>
+                  <source type="image/webp" srcset="">
+                  <img class="integration__img" src="../img/dpd.png" alt="dpd">
+                </picture>
+              </li>
+              <li class="integration__subitem">
+                <picture>
+                  <source type="image/webp" srcset="">
+                  <img class="integration__img" src="../img/gls.png" alt="gls">
+                </picture>
+              </li>
+              <li class="integration__subitem">
+                <picture>
+                  <source type="image/webp" srcset="">
+                  <img class="integration__img" src="../img/uber-eats.png" alt="uber eats">
+                </picture>
+              </li>
+            </ul>
+          </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="contact">
+      <h2 class="contact__title">Nos contacts</h2>
+      <ul class="contact__list">
+        <li class="contact__item">
+          <p class="contact__data">Téléphones</p>
+          <ul class="contact__sublist">
+            <li class="contact__number"><a class="contact__tel" href="#">+33 6 61 31 78 08</a></li>
+            <li class="contact__number"><a class="contact__tel" href="#">+33 1 56 37 09 39</a></li>
+          </ul>
+        </li>
+        <li class="contact__item">
+          <p class="contact__data contact__data--messagers">Messagers</p>
+          <ul class="contact__sublist-social">
+            <li class="contact__socials">
+              <a class="contact__link contact__link--telegram" href="#">
+                <span class="visually-hidden">Telegram</span>
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="15" cy="15.0002" r="14.75" stroke="#039BE5" stroke-width="0.5" />
+                  <g clip-path="url(#clip0)">
+                    <path
+                      d="M12.2781 18.1208L12.0135 21.8435C12.3921 21.8435 12.5561 21.6808 12.7528 21.4855L14.5281 19.7888L18.2068 22.4828C18.8815 22.8588 19.3568 22.6608 19.5388 21.8621L21.9535 10.5475C22.1675 9.55012 21.5935 9.15946 20.9361 9.40412L6.74279 14.8381C5.77412 15.2141 5.78879 15.7541 6.57812 15.9988L10.2068 17.1275L18.6355 11.8535C19.0321 11.5908 19.3928 11.7361 19.0961 11.9988L12.2781 18.1208Z"
+                      fill="#039BE5" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0">
+                      <rect width="16" height="16" fill="white" transform="translate(6 8.00024)" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+            </li>
+            <li class="contact__socials">
+              <a class="contact__link contact__link--whatsapp" href="#">
+                <span class="visually-hidden">Whatsapp</span>
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="15" cy="15.0002" r="14.75" stroke="#4CAF50" stroke-width="0.5" />
+                  <g clip-path="url(#clip0)">
+                    <path
+                      d="M14.9957 7.00562C10.58 7.00656 7.00119 10.5869 7.00213 15.0026C7.00244 16.5316 7.44121 18.0284 8.26635 19.3157L7.02243 22.5431C6.95619 22.7148 7.04164 22.9076 7.21329 22.9739C7.25167 22.9887 7.29243 22.9963 7.33356 22.9962C7.37172 22.9964 7.40961 22.9898 7.44549 22.9769L10.7769 21.7876C14.525 24.122 19.4559 22.9759 21.7903 19.2277C24.1247 15.4795 22.9786 10.5486 19.2304 8.21425C17.9598 7.4229 16.4926 7.00415 14.9957 7.00562Z"
+                      fill="#4CAF50" />
+                    <path
+                      d="M18.8075 16.3663C18.8075 16.3663 17.9913 15.9666 17.4803 15.7001C16.902 15.4023 16.2224 15.9599 15.9026 16.2771C15.4048 16.0859 14.9502 15.7973 14.5654 15.4282C14.1962 15.0434 13.9077 14.5888 13.7165 14.091C14.0337 13.7706 14.59 13.0916 14.2935 12.5133C14.0303 12.0016 13.6273 11.1861 13.6273 11.1854C13.5707 11.0732 13.4558 11.0023 13.3301 11.0022H12.6638C11.6935 11.1698 10.988 12.0164 10.9982 13.001C10.9982 14.0471 12.2501 16.0566 13.0943 16.9014C13.9384 17.7462 15.9479 18.9975 16.9946 18.9975C17.9792 19.0076 18.8258 18.3021 18.9934 17.3318V16.6655C18.9935 16.5385 18.9214 16.4225 18.8075 16.3663Z"
+                      fill="#FAFAFA" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0">
+                      <rect width="16" height="16" fill="white" transform="translate(7 7.00024)" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+            </li>
+            <li class="contact__socials">
+              <a class="contact__link contact__link--viber" href="#">
+                <span class="visually-hidden">Viber</span>
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0)">
+                    <path
+                      d="M16.2003 7.00024H12.7999C9.51859 7.00024 6.84912 9.66971 6.84912 12.951V15.5013C6.84912 17.805 8.17771 19.8956 10.2496 20.879V23.719C10.2496 23.9656 10.558 24.0946 10.7333 23.9194L13.2006 21.4521H16.2003C19.4816 21.4521 22.1511 18.7826 22.1511 15.5013V12.951C22.1511 9.66971 19.4816 7.00024 16.2003 7.00024Z"
+                      fill="#665CAC" />
+                    <path
+                      d="M11.0997 20.8789C9.02781 19.8955 7.69922 17.805 7.69922 15.5013V12.951C7.69922 9.66971 10.3687 7.00024 13.65 7.00024H12.7999C9.51859 7.00024 6.84912 9.66971 6.84912 12.951V15.5013C6.84912 17.805 8.17771 19.8956 10.2496 20.879V23.719C10.2496 23.9656 10.558 24.0946 10.7333 23.9194L11.0997 23.5531V20.8789Z"
+                      fill="#523494" />
+                    <path
+                      d="M18.7781 17.5622L18.5233 16.1821C18.5022 16.068 18.4139 15.9784 18.3002 15.9556L16.2965 15.5549C16.2034 15.5364 16.1075 15.5654 16.0405 15.6324L15.2265 16.4465C13.8549 15.8319 13.0937 15.069 12.4239 13.6386L13.2353 12.8272C13.3023 12.7602 13.3314 12.6641 13.3128 12.5712L12.9121 10.5675C12.8894 10.4538 12.7997 10.3654 12.6857 10.3444L11.3055 10.0897C11.2677 10.0827 11.2288 10.0834 11.1913 10.092C10.8269 10.1748 10.4944 10.3584 10.2298 10.6231C9.77148 11.0814 9.59634 11.7501 9.7233 12.5569C9.93643 13.9118 10.6002 15.7974 11.8249 17.027L11.8417 17.0436C13.0703 18.2674 14.9559 18.9313 16.3108 19.1444C16.4815 19.1713 16.6459 19.1847 16.8036 19.1847C17.3911 19.1847 17.8833 18.9993 18.2448 18.638C18.5094 18.3733 18.6931 18.0408 18.7758 17.6764C18.7842 17.6389 18.785 17.6 18.7781 17.5622Z"
+                      fill="white" />
+                    <path d="M12.9585 13.104L13.2356 12.827L13.2359 12.8267L12.9585 13.104L12.9585 13.104Z"
+                      fill="#E5E5E5" />
+                    <path d="M16.0405 15.6319L15.7607 15.9116L15.7608 15.9117L16.0406 15.6319L16.0405 15.6319Z"
+                      fill="#E5E5E5" />
+                    <path
+                      d="M17.3379 18.6501C17.1803 18.6501 17.0159 18.6368 16.8452 18.6099C15.4903 18.3967 13.6047 17.7329 12.376 16.509L12.3593 16.4924C11.1346 15.2628 10.4708 13.3773 10.2577 12.0224C10.1551 11.3705 10.2499 10.8089 10.5318 10.3755C10.4239 10.4475 10.3226 10.5301 10.2298 10.6229C9.77148 11.0812 9.59634 11.7499 9.7233 12.5568C9.93643 13.9117 10.6002 15.7972 11.8249 17.0268L11.8417 17.0434C13.0703 18.2672 14.9559 18.9311 16.3108 19.1443C16.4815 19.1712 16.6459 19.1845 16.8036 19.1845C17.3911 19.1845 17.8833 18.9992 18.2448 18.6378C18.3375 18.545 18.4201 18.4437 18.4921 18.3358C18.1722 18.5439 17.7824 18.6501 17.3379 18.6501Z"
+                      fill="#E5E5E5" />
+                    <path
+                      d="M15.0666 11.8176C14.9101 11.8176 14.7832 11.9445 14.7832 12.101C14.7832 12.2575 14.9101 12.3843 15.0666 12.3843C15.6916 12.3843 16.2 12.8928 16.2 13.5178C16.2 13.6722 16.329 13.8012 16.4834 13.8012C16.6378 13.8012 16.7668 13.6722 16.7668 13.5178C16.7668 12.5803 16.0041 11.8176 15.0666 11.8176Z"
+                      fill="white" />
+                    <path
+                      d="M15.0668 10.6841C14.962 10.6841 14.8562 10.6899 14.7523 10.7013C14.5968 10.7185 14.4846 10.8585 14.5017 11.0141C14.5189 11.1697 14.6592 11.2816 14.8145 11.2647C14.8978 11.2555 14.9826 11.2508 15.0668 11.2508C16.3168 11.2508 17.3337 12.2678 17.3337 13.5178C17.3337 13.6019 17.329 13.6868 17.3198 13.7701C17.3029 13.9235 17.4169 14.066 17.5704 14.0829C17.7239 14.0998 17.8662 13.9858 17.8832 13.8323C17.8947 13.7284 17.9005 13.6226 17.9005 13.5178C17.9005 11.9553 16.6293 10.6841 15.0668 10.6841Z"
+                      fill="white" />
+                    <path
+                      d="M15.0673 9.55078C14.966 9.55078 14.8634 9.55463 14.7625 9.5623C14.6064 9.57412 14.4895 9.71026 14.5013 9.86628C14.5131 10.0223 14.6497 10.1393 14.8053 10.1275C14.892 10.1208 14.9802 10.1175 15.0673 10.1175C16.9423 10.1175 18.4677 11.6429 18.4677 13.518C18.4677 13.7833 18.4371 14.0473 18.3767 14.3029C18.3421 14.4493 18.4323 14.6015 18.5775 14.6413C18.7302 14.6831 18.8919 14.5873 18.9283 14.4332C18.9987 14.135 19.0344 13.8271 19.0344 13.518C19.0344 11.3304 17.2548 9.55078 15.0673 9.55078Z"
+                      fill="white" />
+                  </g>
+                  <circle cx="15" cy="15.0002" r="14.75" stroke="#665CAC" stroke-width="0.5" />
+                  <defs>
+                    <clipPath id="clip0">
+                      <rect width="17" height="17" fill="white" transform="translate(6 7.00024)" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        <li class="contact__item">
+          <p class="contact__data contact__data--address">Adresse</p>
+          <p class="contact__street">75013 Paris, 110 rue de Patay</p>
+          <p class="contact__time">Heures d'ouverture – 10:00 - 18:00 </p>
+          <p class="contact__feedback">On collecte vos candidatures 24/7</p>
+        </li>
+        <div class="contact__block">
+          <a class="contact__button button">
+            <span class="button__promo">
+              <svg>
+                <use xlink:href="img/sprites/sprite.svg#icon-button"></use>
+              </svg>
+            </span>
+            <span>obtenir un devis</span>
+          </a>
+        </div>
+      </ul>
+    </section>
+    <footer class="footer">
+      <a class="footer__logo" href="index.html">
+        <img src="../img/footer-logo.png" alt="">
+      </a>
+      <ul class="footer__list">
+        <li class="footer__item"><a class="footer__link" href="#">Politique de confidélité</a></a></li>
+        <li class="footer__item"><a class="footer__link" href="#">Mentions Légales</a></li>
+      </ul>
+      <div class="footer__wrapper footer__wrapper--copyright">
+        <p class="footer__copyright">Copyright © 2020 Alion | All rights reserved.</p>
+      </div>
+    </footer>
+  </main>
 </body>
+
+</html>

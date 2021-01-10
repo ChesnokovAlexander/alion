@@ -1,0 +1,42 @@
+.circle {
+  position: absolute;
+  z-index: 100;
+  top: 70px;
+  left: 190px;
+}
+
+.circle__small {
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  background-color: #4299ff;
+  border-radius: 50%;
+  left: 15px;
+  top: 15px;
+}
+
+.circle__mid {
+  position: absolute;
+  width: 31px;
+  height: 31px;
+  background-color: rgba(66, 153, 255, 0.4);
+  border-radius: 50%;
+  left: 8px;
+  top: 8px;
+}
+
+.circle__big {
+  position: absolute;
+  width: 47px;
+  height: 47px;
+  background-color: rgba(66, 153, 255, 0.25);
+  border-radius: 50%;
+}
+
+@media (min-width: 768px) {
+  .circle {
+    top: 190px;
+    left: 525px;
+
+  }
+}

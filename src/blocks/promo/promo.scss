@@ -1,0 +1,179 @@
+.promo__list {
+  @include list-reset;
+  margin-bottom: 18px;
+}
+
+.promo__switch-list {
+  @include list-reset;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 48px;
+}
+
+.promo__img {
+  position: relative;
+  z-index: 10;
+  display: block;
+  height: 342px;
+  object-fit: cover;
+  mask-image: url("../../img/woman-mobile-mask.png");
+  mask-position: bottom;
+  mask-size: cover;
+}
+
+.promo__switch-prev,
+.promo__switch-next {
+  position: relative;
+  width: 15px;
+  height: 8px;
+  margin: 2px 0 0 0;
+  background: transparent;
+  border: none;
+  opacity: 1;
+
+  &::after {
+    display: none;
+  }
+
+  svg {
+    width: 15px;
+    min-width: 15px;
+    height: 8px;
+
+    transition: all 0.3s;
+    fill: #e4e4e4;
+
+    &:hover {
+      fill: #4299ff;
+    }
+  }
+}
+
+.promo__switch-pagination {
+  position: relative;
+}
+
+.promo__pagination-number {
+  font-size: 12px;
+  line-height: 140.69%;
+  color: #e4e4e4;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #4299ff;
+    border-radius: 50%;
+  }
+}
+
+.promo__content {
+  padding: 0 20px;
+  background-image: url("../../img/promo-bg.png");
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.promo__text {
+  font-size: 16px;
+  line-height: 20px;
+  color: #4299ff;
+  margin-bottom: 2px;
+}
+
+.promo__title {
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 113.02%;
+  color: #222222;
+  margin-bottom: 10px;
+}
+
+.promo__paragraph {
+  font-size: 25px;
+  line-height: 31px;
+  color: #222222;
+  margin-bottom: 48px;
+}
+
+.promo__button {
+  display: block;
+  height: 53px;
+  padding: 18px 0 18px 21px;
+}
+
+.promo__button span {
+  margin-right: 63px;
+}
+
+.promo__legend {
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  color: #767676;
+  opacity: 0.7;
+  margin-top: 10px;
+  margin-bottom: 62px;
+}
+
+.promo__supports {
+  @include list-reset;
+  padding: 0 20px;
+  margin-bottom: 68px;
+}
+
+.promo__support {
+  display: block;
+  background-color: #f5faff;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 1200px) {
+  .promo__wrapper {
+    @include page-wrapper;
+  }
+
+  .promo__img {
+    width: 1003px;
+    height: 1003px;
+    mask-image: url("../../img/desktop-mask.png");
+    left: 600px;
+  }
+
+  .promo__content {
+    position: absolute;
+    z-index: 10;
+    left: 188px;
+    bottom: 60px;
+  }
+
+  .promo__text {
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .promo__title {
+    font-size: 65px;
+    line-height: 107.52%;
+  }
+
+  .promo__paragraph {
+    font-size: 40px;
+    line-height: 49px;
+  }
+
+  .promo__block {
+    display: flex;
+  }
+
+  .promo__legend {
+    font-size: 16px;
+    line-height: 20px;
+    width: 186px;
+    text-align: start;
+    margin-left: 32px;
+  }
+}

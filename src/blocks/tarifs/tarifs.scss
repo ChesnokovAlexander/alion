@@ -1,0 +1,95 @@
+.tarifs {
+  background-image: url("../../img/tarifs-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.tarifs__title {
+  font-size: 23px;
+  line-height: 28px;
+  text-align: center;
+  color: #ffffff;
+  padding: 29px 67px 38px 68px;
+}
+
+.tarifs__list {
+  @include list-reset;
+  padding: 0 21px 55px 21px;
+}
+
+.tarifs__item {
+  margin-bottom: 30px;
+
+  &:not(:last-child) {
+    border: 1px solid #ffffff;
+  }
+}
+
+.tarifs__item--last {
+  background-color: rgba(101, 170, 251, 0.5);
+}
+
+.tarifs__name {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #65aafb;
+  padding: 18px 27px 15px 27px;
+  margin-bottom: 25px;
+}
+
+.tarifs__price {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 37px;
+  text-align: center;
+  text-decoration-line: line-through;
+  color: #ffffff;
+  margin-bottom: 21px;
+}
+
+.tarifs__standart {
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 29px;
+}
+
+.tarifs__button {
+  display: block;
+  color: rgba(255, 255, 255, 0.5);
+  background: #75b4ff;
+  box-shadow: 0px 3px 0px #508ad0;
+  padding: 16px 52px;
+  margin: 0 20px 29px 20px;
+}
+
+.tarifs__button--last {
+  color: #4299ff;
+  background-color: #ffffff;
+  box-shadow: 0px 3px 0px #dedede;
+}
+
+.tarifs__block {
+  font-size: 12px;
+  line-height: 15px;
+  color: #ffffff;
+  background-color: #3883dc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 9px 26px 12px 20px;
+}
+
+.tarifs__help {
+  width: 114px;
+}
+
+.tarifs__more {
+  width: 62px;
+  border-bottom: 1px dashed #ffffff;
+}

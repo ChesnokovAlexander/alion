@@ -1,0 +1,32 @@
+.support {
+  position: relative;
+}
+
+.support__line {
+  position: absolute;
+  width: 3px;
+  height: 100%;
+  background: #4299ff;
+}
+
+.support__content {
+  display: flex;
+}
+
+.support__text {
+  font-size: 12px;
+  line-height: 19px;
+  padding: 19px 18px 0 0;
+}
+
+.support__logo-region {
+  padding: 36px 20px 35px 16px;
+}
+
+.support__logo-alion {
+  padding: 25px 22px 85px 19px;
+}
+
+@media (min-width: 768px) {
+
+}
