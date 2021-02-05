@@ -14,9 +14,9 @@
 }
 
 .support__text {
+  padding: 19px 18px 0 0;
   font-size: 12px;
   line-height: 19px;
-  padding: 19px 18px 0 0;
 }
 
 .support__logo-region {
@@ -27,6 +27,9 @@
   padding: 25px 22px 85px 19px;
 }
 
-@media (min-width: 768px) {
-
+@media (min-width: 1200px) {
+  .support__text {
+    font-size: 14px;
+    line-height: 20px;
+  }
 }

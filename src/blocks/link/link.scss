@@ -1,24 +1,24 @@
 .link__list {
   @include list-reset;
-  padding: 0 20px;
   margin-bottom: 35px;
+  padding: 0 20px;
 }
 
 .link__item {
   display: block;
-  font-size: 12px;
-  line-height: 15px;
-  color: #49a3fe;
-  background-color: #ffffff;
   min-width: 279px;
   min-height: 42px;
-  padding: 15px 0 10px 0;
   margin-bottom: 10px;
+  padding: 15px 0 10px 0;
+  font-size: 12px;
+  line-height: 15px;
   text-align: center;
+  color: #49a3fe;
+  background-color: #ffffff;
 
   &:active {
     color: #ffffff;
-    background: #49a3fe
+    background: #49a3fe;
   }
 }
 
@@ -29,6 +29,11 @@
 
   .link__item {
     min-width: 223px;
-    margin: 0 10px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .link__list {
+    justify-content: center;
   }
 }

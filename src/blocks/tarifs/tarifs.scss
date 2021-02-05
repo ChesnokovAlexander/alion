@@ -5,11 +5,11 @@
 }
 
 .tarifs__title {
+  padding: 29px 67px 38px 68px;
   font-size: 23px;
   line-height: 28px;
   text-align: center;
   color: #ffffff;
-  padding: 29px 67px 38px 68px;
 }
 
 .tarifs__list {
@@ -30,59 +30,59 @@
 }
 
 .tarifs__name {
-  font-size: 12px;
+  margin-bottom: 25px;
+  padding: 18px 27px 15px 27px;
   font-weight: 700;
+  font-size: 12px;
   line-height: 15px;
   text-align: center;
-  text-transform: uppercase;
   color: #ffffff;
+  text-transform: uppercase;
   background-color: #65aafb;
-  padding: 18px 27px 15px 27px;
-  margin-bottom: 25px;
 }
 
 .tarifs__price {
-  font-size: 30px;
+  margin-bottom: 21px;
   font-weight: 500;
+  font-size: 30px;
   line-height: 37px;
   text-align: center;
-  text-decoration-line: line-through;
   color: #ffffff;
-  margin-bottom: 21px;
+  text-decoration-line: line-through;
 }
 
 .tarifs__standart {
+  margin-bottom: 29px;
   font-size: 14px;
   line-height: 20px;
   text-align: center;
   color: #ffffff;
-  margin-bottom: 29px;
 }
 
 .tarifs__button {
   display: block;
+  margin: 0 20px 29px 20px;
+  padding: 16px 52px;
   color: rgba(255, 255, 255, 0.5);
   background: #75b4ff;
-  box-shadow: 0px 3px 0px #508ad0;
-  padding: 16px 52px;
-  margin: 0 20px 29px 20px;
+  box-shadow: 0 3px 0 #508ad0;
 }
 
 .tarifs__button--last {
   color: #4299ff;
   background-color: #ffffff;
-  box-shadow: 0px 3px 0px #dedede;
+  box-shadow: 0 3px 0 #dedede;
 }
 
 .tarifs__block {
-  font-size: 12px;
-  line-height: 15px;
-  color: #ffffff;
-  background-color: #3883dc;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 9px 26px 12px 20px;
+  font-size: 12px;
+  line-height: 15px;
+  color: #ffffff;
+  background-color: #3883dc;
 }
 
 .tarifs__help {
@@ -92,4 +92,19 @@
 .tarifs__more {
   width: 62px;
   border-bottom: 1px dashed #ffffff;
+}
+
+@media (min-width: 1200px) {
+  .tarifs {
+    background-image: url("../img/tarifs-bg-desktop.jpg");
+    @include page-wrapper;
+  }
+
+  .tarifs__list {
+    display: grid;
+    grid-template-columns: repeat(3, 26%);
+    grid-gap: 61px;
+    justify-content: center;
+    padding: 0;
+  }
 }

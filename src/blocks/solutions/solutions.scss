@@ -3,19 +3,19 @@
 }
 
 .solutions__title {
-  font-size: 20px;
+  padding: 30px 0;
   font-weight: 700;
+  font-size: 20px;
   line-height: 25px;
   text-align: center;
-  padding: 30px 0;
 }
 
 .solutions__develop {
+  padding-bottom: 18px;
   font-size: 12px;
   line-height: 15px;
   text-align: center;
   opacity: 0.4;
-  padding-bottom: 18px;
 }
 
 .solutions__page {
@@ -27,23 +27,23 @@
 }
 
 .solutions__legend {
+  margin-bottom: 21px;
   font-size: 12px;
   line-height: 15px;
   opacity: 0.5;
-  margin-bottom: 21px;
 }
 
 .solutions__text {
+  margin-bottom: 25px;
   font-size: 12px;
   line-height: 142.52%;
-  margin-bottom: 25px;
 }
 
 .solutions__target {
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 20px;
   margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .solutions__list {
@@ -52,29 +52,29 @@
 }
 
 .solutions__item {
-  font-size: 12px;
-  line-height: 129.52%;
   position: relative;
   padding-left: 20px;
+  font-size: 12px;
+  line-height: 129.52%;
 
   &::before {
     content: "";
     position: absolute;
-    background-image: url("../../img/icons/svg/icon-marker-list.svg");
-    background-repeat: no-repeat;
+    top: 3px;
+    left: 0;
     width: 10px;
     height: 10px;
-    left: 0;
-    top: 3px;
+    background-image: url("../../img/icons/svg/icon-marker-list.svg");
+    background-repeat: no-repeat;
   }
 }
 
 .solutions__name {
+  width: 274px;
+  margin-bottom: 25px;
+  padding: 0 21px;
   font-size: 16px;
   line-height: 134.02%;
-  width: 274px;
-  padding: 0 21px;
-  margin-bottom: 25px;
 }
 
 .solutions__advantages {
@@ -83,15 +83,15 @@
 }
 
 .solutions__number {
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 134.02%;
   display: flex;
   align-items: center;
   width: 278px;
   height: 54px;
-  background-color: #ffffff;
   margin-bottom: 18px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 134.02%;
+  background-color: #ffffff;
 }
 
 
@@ -110,8 +110,17 @@
   }
 
   .solutions__advantages {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .solutions__advantage {
+    width: calc(50% - 20px);
+    margin: 10px;
+
+    &:not(:last-child) {
+      margin: 10px;
+    }
   }
 
   .solutions__title {
@@ -126,5 +135,23 @@
   .solutions__head,
   .solutions__name {
     font-size: 25px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .solutions__advantages {
+    flex-wrap: nowrap;
+  }
+
+  .solutions__advantage {
+    width: auto;
+  }
+
+  .solutions__block {
+    @include page-wrapper;
+  }
+
+  .solutions__image {
+    @include page-wrapper;
   }
 }
