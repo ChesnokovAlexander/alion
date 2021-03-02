@@ -5,11 +5,16 @@
 }
 
 .target__name {
-  padding-left: 16px;
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  height: 54px;
+  padding: 0 15px;
   font-weight: 500;
   font-size: 14px;
   line-height: 17px;
   color: #4299ff;
+  background: #ffffff;
 }
 
 .target__text {

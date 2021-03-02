@@ -3,10 +3,11 @@
   flex-direction: column;
   align-items: center;
   background-color: #4299ff;
+  padding-top: 20px;
 }
 
 .footer__logo {
-  padding: 22px 0;
+  margin-bottom: 20px;
 }
 
 .footer__list {
@@ -30,10 +31,11 @@
 
 .footer__wrapper--copyright {
   background-color: #2e84e8;
+  width: 100%;
+  padding: 12px 0;
 }
 
 .footer__copyright {
-  padding: 12px 39px;
   font-size: 12px;
   line-height: 15px;
   text-align: center;
@@ -44,15 +46,26 @@
   .footer {
     flex-direction: row;
     justify-content: space-between;
+    padding: 20px;
+  }
+
+  .footer__logo {
+    margin: 0;
   }
 
   .footer__list {
     margin: 0;
+    padding-left: 0;
   }
 
   .footer__copyright {
     padding: 0;
     background-color: #4299ff;
+  }
+
+  .footer__wrapper--copyright {
+    background-color: transparent;
+    width: auto;
   }
 }
 

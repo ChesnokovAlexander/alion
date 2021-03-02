@@ -1,13 +1,16 @@
 .button {
-  padding: 20px 79px;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px 7px 20px;
   font-weight: 700;
   font-size: 12px;
   line-height: 15px;
   text-align: center;
   color: #ffffff;
   text-transform: uppercase;
-  background-color: $main-color;
+  background-color: #49a3fe;
   box-shadow: 0 3px 0 #5292d2;
+  cursor: pointer;
 
   &:hover {
     background-color: #64b1ff;
@@ -23,6 +26,7 @@
     background: transparent;
     border: 1px solid #49a3fe;
     box-shadow: none;
+    margin: 0 21px;
 
     &:hover {
       color: #ffffff;
@@ -31,17 +35,26 @@
   }
 }
 
-.button__promo {
+.button__promo,
+.button__modal {
   width: 35px;
   min-width: 35px;
   height: 35px;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 50%;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20%;
+ 
   & svg {
     left: 0;
     width: 15px;
     height: 15px;
     fill: #ffffff;
   }
+}
+
+.button__modal {
+  margin-right: 10%;
 }

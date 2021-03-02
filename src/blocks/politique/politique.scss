@@ -1,0 +1,26 @@
+.politique {
+    padding: 60px 21px 0 21px;
+}
+
+.politique__title {
+    margin-bottom: 45px;
+}
+
+.politique__text {
+    margin-bottom: 40px;
+    font-family: "Avenir Next Cyr";
+    line-height: 25px;
+}
+
+@media (min-width: 768px) {
+    .politique {
+        padding-top: 80px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .politique {
+        @include page-wrapper;
+        padding-top: 200px;
+    }
+}

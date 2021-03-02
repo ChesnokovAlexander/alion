@@ -11,25 +11,31 @@
 
 .support__content {
   display: flex;
+  padding: 18px;
+}
+
+.support__logo {
+  margin-right: 20px;
 }
 
 .support__text {
-  padding: 19px 18px 0 0;
   font-size: 12px;
   line-height: 19px;
-}
-
-.support__logo-region {
-  padding: 36px 20px 35px 16px;
-}
-
-.support__logo-alion {
-  padding: 25px 22px 85px 19px;
 }
 
 @media (min-width: 1200px) {
   .support__text {
     font-size: 14px;
     line-height: 20px;
+  }
+
+  .support__content {
+     padding: 37px;
+     align-items: center;
+  }
+  
+  .support__logo {
+    margin-right: 32px;
+    align-items: center;
   }
 }

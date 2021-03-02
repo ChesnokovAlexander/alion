@@ -26,6 +26,7 @@ module.exports.dev = gulp.series(
     style,
     scripts,
     sprite,
+    webp,
     vendor
   ),
   gulp.parallel(

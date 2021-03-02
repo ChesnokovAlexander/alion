@@ -2,6 +2,7 @@
   background-image: url("../../img/tarifs-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  margin: 0 -20px;
 }
 
 .tarifs__title {
@@ -94,6 +95,14 @@
   border-bottom: 1px dashed #ffffff;
 }
 
+@media (min-width: 768px) {
+  .tarifs__list {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (min-width: 1200px) {
   .tarifs {
     background-image: url("../img/tarifs-bg-desktop.jpg");
@@ -102,9 +111,9 @@
 
   .tarifs__list {
     display: grid;
-    grid-template-columns: repeat(3, 26%);
-    grid-gap: 61px;
     justify-content: center;
+    grid-gap: 61px;
+    grid-template-columns: repeat(3, 26%);
     padding: 0;
   }
 }

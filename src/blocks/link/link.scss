@@ -1,39 +1,22 @@
 .link__list {
   @include list-reset;
   margin-bottom: 35px;
-  padding: 0 20px;
-}
-
-.link__item {
-  display: block;
-  min-width: 279px;
-  min-height: 42px;
-  margin-bottom: 10px;
-  padding: 15px 0 10px 0;
-  font-size: 12px;
-  line-height: 15px;
-  text-align: center;
-  color: #49a3fe;
-  background-color: #ffffff;
-
-  &:active {
-    color: #ffffff;
-    background: #49a3fe;
-  }
 }
 
 @media (min-width: 768px) {
   .link__list {
     display: flex;
-  }
-
-  .link__item {
-    min-width: 223px;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 60px;
   }
 }
 
 @media (min-width: 1200px) {
-  .link__list {
-    justify-content: center;
+  .link__item {
+    font-size: 14px;
+    line-height: 17px;
+    height: 54px;
+    padding: 0 25px;
   }
 }

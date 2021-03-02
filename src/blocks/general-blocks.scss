@@ -1,6 +1,6 @@
 @import "./button/button";
-@import "./tabs/tabs";
-@import "./burger/burger";
+@import "./tabs/tabs.scss";
+@import "./burger/burger.scss";
 @import "./visually-hidden/visually-hidden.scss";
 @import "./header/header.scss";
 @import "./promo/promo.scss";
@@ -13,3 +13,8 @@
 @import "./contact/contact.scss";
 @import "./footer/footer.scss";
 @import "./circle/circle.scss";
+@import "./slick/slick.scss";
+@import "./politique/politique.scss";
+@import "./modal/modal.scss";
+@import "./form/form.scss";
+@import "./field/field.scss";
